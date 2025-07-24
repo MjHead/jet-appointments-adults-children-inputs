@@ -20,7 +20,7 @@ Result example:
 ## Setting up the plugin properties
 
 You can set up the plugin properies in the 2 ways
-- Manually by changing default values here - https://github.com/MjHead/jet-appointments-adults-children-inputs/blob/main/jet-appointments-adults-children-inputs.php#L33-L40
+- Manually, by changing default values directly in the code of the plugin before or after installing it on your website. Here is the place where you need to change them - https://github.com/MjHead/jet-appointments-adults-children-inputs/blob/main/jet-appointments-adults-children-inputs.php#L33-L40
 - Or by setting up WordPress options - 'jet_apb_ac_adults_field', 'jet_apb_ac_children_field', 'jet_apb_ac_adults_price', 'jet_apb_ac_children_price'
 
 To manage this with WordPress options you can create JetEngine Option Page. Here is the setup of the page
