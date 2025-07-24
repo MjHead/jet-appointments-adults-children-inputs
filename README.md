@@ -17,7 +17,7 @@ Result example:
 4. You need to add Adults and Children fields into the form manually. Optionally you can put them int the conditional block and show only user will select the slot in the calendar.
 5. The last thing - you need to specify 4 properties to connect form and this addon - Adults field, Children field, Price per adult, Price per child. More detailed instructions on this below.
 
-## Settings up the plugin properties
+## Setting up the plugin properties
 
 You can set up the plugin properies in the 2 ways
 - Manually by changing default values here - https://github.com/MjHead/jet-appointments-adults-children-inputs/blob/main/jet-appointments-adults-children-inputs.php#L33-L40
