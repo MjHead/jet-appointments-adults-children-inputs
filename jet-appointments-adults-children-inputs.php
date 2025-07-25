@@ -27,7 +27,6 @@ class Jet_APB_Adults_Children_Inputs {
 		/**
 		 * You can manually set the default values for the properties below.
 		 * Also you can set them via the options page created by JetEngine.
-		 * Or default WordPress options page.
 		 */
 		$defaults = array(
 			// Form field names for adults field:
@@ -40,8 +39,6 @@ class Jet_APB_Adults_Children_Inputs {
 			'jet_apb_ac_children_price' => 10,
 		);
 
-		$this->register_wp_settings();
-
 		$props_map = array(
 			'jet_apb_ac_adults_field' => 'adults_field',
 			'jet_apb_ac_children_field' => 'children_field',
@@ -53,36 +50,6 @@ class Jet_APB_Adults_Children_Inputs {
 			$prop = isset( $props_map[ $key ] ) ? $props_map[ $key ] : $key;
 			$this->{$prop} = get_option( $key, $value );
 		}
-	}
-
-	/**
-	 * Register WordPress settings for the plugin.
-	 */
-	public function register_wp_settings() {
-
-		register_setting(
-			'jet_apb_ac_settings',
-			'jet_apb_ac_adults_field',
-			array( 'sanitize_callback' => 'sanitize_text_field' )
-		);
-
-		register_setting(
-			'jet_apb_ac_settings',
-			'jet_apb_ac_children_field',
-			array( 'sanitize_callback' => 'sanitize_text_field' )
-		);
-
-		register_setting(
-			'jet_apb_ac_settings',
-			'jet_apb_ac_adults_price',
-			array( 'sanitize_callback' => 'floatval' )
-		);
-
-		register_setting(
-			'jet_apb_ac_settings',
-			'jet_apb_ac_children_price',
-			array( 'sanitize_callback' => 'floatval' )
-		);
 	}
 
 	/**
